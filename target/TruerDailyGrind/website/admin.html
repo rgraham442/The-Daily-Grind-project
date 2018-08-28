@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Admin | The Daily Grind</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/fancyboxCustom.css" />
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body onload="check();trueCheck()">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">The Daily Grind</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto" id="navHold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" id="loginLink">Employee Sign-In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+<form action="/TruerDailyGrind/website/add.html">
+		<div class="container" id=addcontainer>
+			<h1 id = add>Add Item</h1>
+			<hr>
+
+			<label for="name"><b>Name</b></label> <input type="text"
+				id=name placeholder="Enter Product Name..." name="name" required>
+
+			<label for="type"><b>Type</b></label> <input type="text"
+				id=type placeholder="Enter type..." name="type" required>
+				
+				<label for="cost"><b>Cost</b></label> <input type="text"
+				id=cost placeholder="Enter Cost..." name="cost" required>
+				<label for="stock"><b>Stock</b></label> <input type="text"
+				id=stock placeholder="Enter Product stock..." name="stock" required>
+				<label for="desc"><b>Description</b></label> <input type="text"
+				id=desc placeholder="Enter Product description" name="desc" required>
+				<label for="img"><b>Image</b></label> <input type="text"
+				id=img placeholder="Enter Image URL" name="img" required>
+			<hr>
+
+			<button type="button" class="registerbtn" onclick="addItem()">Add Product</button>
+		</div>
+
+
+	</form>
+        
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; The Daily Grind 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="js/fancyboxCustom.js"></script>
+    <script src="add.js"></script>
+    <script src="admin.js"></script>
+  </body>
+
+</html>
